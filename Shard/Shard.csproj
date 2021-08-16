@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\vloge\Downloads\Rift-2.1.0.3 (1)\Shard.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C154FB3A-61FC-4193-9D31-E2F09FF2B666}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Shard</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>Rift.Backend</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore" />
+    <Reference Include="Microsoft.AspNetCore.Authorization.Policy" />
+    <Reference Include="Microsoft.AspNetCore.Diagnostics" />
+    <Reference Include="Microsoft.AspNetCore.Hosting" />
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions" />
+    <Reference Include="Microsoft.AspNetCore.Http" />
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions" />
+    <Reference Include="Microsoft.AspNetCore.Http.Features" />
+    <Reference Include="Microsoft.AspNetCore.Mvc" />
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions" />
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core" />
+    <Reference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson">
+      <HintPath>lib\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing" />
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>lib\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>lib\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting">
+      <HintPath>lib\Microsoft.Extensions.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
+      <HintPath>lib\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>lib\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>lib\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.FileSystem" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Net.Primitives" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Security.Cryptography.Algorithms" />
+    <Reference Include="System.Security.Cryptography.Primitives" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_003CModule_003E.cs" />
+    <Compile Include="Shard_ProcessedByFody.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="Services\IProfileService.cs" />
+    <Compile Include="Services\ProfileService.cs" />
+    <Compile Include="Models\Storefront\Catalog.cs" />
+    <Compile Include="Models\Storefront\Storefront.cs" />
+    <Compile Include="Models\Profile\McpResponse.cs" />
+    <Compile Include="Models\Profile\Profile.cs" />
+    <Compile Include="Models\Profile\ProfileStats.cs" />
+    <Compile Include="Models\Profile\ProfileItem.cs" />
+    <Compile Include="Models\Profile\ItemAttributes.cs" />
+    <Compile Include="Models\Profile\ItemVariant.cs" />
+    <Compile Include="Models\Profile\AthenaProfileStats.cs" />
+    <Compile Include="Models\Profile\CommonCoreProfileStats.cs" />
+    <Compile Include="Models\Profile\Changes\McpChange.cs" />
+    <Compile Include="Models\Profile\Changes\McpFullProfileUpdate.cs" />
+    <Compile Include="Models\Profile\Changes\McpItemAttrChanged.cs" />
+    <Compile Include="Models\Profile\Changes\McpStatModified.cs" />
+    <Compile Include="Models\Lightswitch\LightswitchStatus.cs" />
+    <Compile Include="Models\Lightswitch\LauncherInfo.cs" />
+    <Compile Include="Models\Fortnite\AthenaCosmeticLocker.cs" />
+    <Compile Include="Models\Fortnite\AthenaLockerSlotsData.cs" />
+    <Compile Include="Models\Fortnite\AthenaLockerSlot.cs" />
+    <Compile Include="Models\Fortnite\AthenaLockerSlotActiveVariant.cs" />
+    <Compile Include="Models\Fortnite\PrivacySettings.cs" />
+    <Compile Include="Models\Fortnite\VersionCheck.cs" />
+    <Compile Include="Models\Exceptions\BaseException.cs" />
+    <Compile Include="Models\Exceptions\OAuth\InvalidClientException.cs" />
+    <Compile Include="Models\Exceptions\OAuth\InvalidRequestException.cs" />
+    <Compile Include="Models\Exceptions\OAuth\UnsupportedGrantTypeException.cs" />
+    <Compile Include="Models\Exceptions\Fortnite\InvalidParameterException.cs" />
+    <Compile Include="Models\Exceptions\Failsafe\CosmeticsDisallowedException.cs" />
+    <Compile Include="Models\Exceptions\Failsafe\WrongButtonException.cs" />
+    <Compile Include="Models\Exceptions\Common\MethodNotAllowedException.cs" />
+    <Compile Include="Models\Exceptions\Common\NotFoundException.cs" />
+    <Compile Include="Models\Exceptions\Common\UnhandledErrorException.cs" />
+    <Compile Include="Models\Exceptions\Cloudstorage\FileNotFoundException.cs" />
+    <Compile Include="Models\Content\BattleRoyaleNewsEntry.cs" />
+    <Compile Include="Models\Content\BattleRoyaleNews.cs" />
+    <Compile Include="Models\Content\BattleRoyaleNewsMOTD.cs" />
+    <Compile Include="Models\Content\BattleRoyaleNewsWebsiteMOTD.cs" />
+    <Compile Include="Models\Content\DynamicBackground.cs" />
+    <Compile Include="Models\Content\Background.cs" />
+    <Compile Include="Models\Content\BackgroundData.cs" />
+    <Compile Include="Models\Content\EmergencyNoticeEntry.cs" />
+    <Compile Include="Models\Content\Pages.cs" />
+    <Compile Include="Models\Content\BasePagesEntry.cs" />
+    <Compile Include="Models\Content\PagesMessage.cs" />
+    <Compile Include="Models\Content\PagesMessageBase.cs" />
+    <Compile Include="Models\Content\PagesMOTD.cs" />
+    <Compile Include="Models\Content\SubgameInfoEntry.cs" />
+    <Compile Include="Models\Content\SubgameInfo.cs" />
+    <Compile Include="Models\Content\SubgameSelectEntry.cs" />
+    <Compile Include="Models\Commands\Currency\SetMtxPlatform.cs" />
+    <Compile Include="Models\Commands\Currency\MtxPlatforms.cs" />
+    <Compile Include="Models\Commands\Cosmetics\EquipBattleRoyaleCustomization.cs" />
+    <Compile Include="Models\Commands\Cosmetics\SetBattleRoyaleBanner.cs" />
+    <Compile Include="Models\Commands\Cosmetics\SetCosmeticLockerBanner.cs" />
+    <Compile Include="Models\Commands\Cosmetics\SetCosmeticLockerSlot.cs" />
+    <Compile Include="Models\Commands\Cosmetics\CosmeticLockerItemCategories.cs" />
+    <Compile Include="Models\Commands\Cosmetics\SetItemFavoriteStatusBatch.cs" />
+    <Compile Include="Models\Cloudstorage\Config.cs" />
+    <Compile Include="Models\Cloudstorage\ConfigTransport.cs" />
+    <Compile Include="Models\Cloudstorage\CloudstorageFile.cs" />
+    <Compile Include="Models\Calendar\ChannelState.cs" />
+    <Compile Include="Models\Calendar\ChannelEvent.cs" />
+    <Compile Include="Models\Calendar\Timeline.cs" />
+    <Compile Include="Models\Calendar\TimelineChannel.cs" />
+    <Compile Include="Models\Calendar\States\ClientEventsState.cs" />
+    <Compile Include="Models\Calendar\States\StandaloneStoreState.cs" />
+    <Compile Include="Models\Account\Account.cs" />
+    <Compile Include="Models\Account\OAuthToken.cs" />
+    <Compile Include="Filters\BaseExceptionFilterAttribute.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CalendarController.cs" />
+    <Compile Include="Controllers\CloudstorageController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\DatarouterController.cs" />
+    <Compile Include="Controllers\FortniteController.cs" />
+    <Compile Include="Controllers\LightswitchController.cs" />
+    <Compile Include="Controllers\MatchmakingController.cs" />
+    <Compile Include="Controllers\McpController.cs" />
+    <Compile Include="Controllers\StorefrontController.cs" />
+    <Compile Include="Controllers\WaitingRoomController.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="costura.metadata" />
+    <EmbeddedResource Include="costura\costura\dll.compressed" />
+    <EmbeddedResource Include="costura\costura\pdb.compressed" />
+    <EmbeddedResource Include="costura\microsoft\aspnetcore\authorization\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\aspnetcore\components\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\aspnetcore\components\forms\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\aspnetcore\components\web\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\aspnetcore\jsonpatch\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\aspnetcore\metadata\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\aspnetcore\mvc\newtonsoftjson\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\abstractions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\binder\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\commandline\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\environmentvariables\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\fileextensions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\json\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\usersecrets\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\dependencyinjection\abstractions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\dependencyinjection\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\fileproviders\abstractions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\fileproviders\embedded\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\fileproviders\physical\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\filesystemglobbing\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\hosting\abstractions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\hosting\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\logging\abstractions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\logging\configuration\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\logging\console\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\logging\debug\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\logging\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\logging\eventlog\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\logging\eventsource\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\options\configurationextensions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\options\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\primitives\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\jsinterop\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\mobileblazorbindings\hosting\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\mobileblazorbindings\hosting\pdb.compressed" />
+    <EmbeddedResource Include="costura\newtonsoft\json\bson\dll.compressed" />
+    <EmbeddedResource Include="costura\newtonsoft\json\bson\pdb.compressed" />
+    <EmbeddedResource Include="costura\newtonsoft\json\dll.compressed" />
+    <EmbeddedResource Include="costura\system\runtime\compilerservices\unsafe\dll.compressed" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
