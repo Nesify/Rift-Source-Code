@@ -6,4 +6,5 @@ i like rift
 https://discord.gg/7DzKEqHekW<br> join or gay
 <br><br><br>
 #Will This Update?
+<br>
 YES IT WILL EVERY RIFT UPDATE (or some)
