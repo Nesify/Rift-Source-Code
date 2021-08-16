@@ -1,0 +1,11 @@
+<Window x:Class="Rift.Frontend.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:blazorwpf="clr-namespace:Microsoft.MobileBlazorBindings.WPF;assembly=Microsoft.MobileBlazorBindings.WPF"
+        Title="Rift" Height="660" Width="1176" MinHeight="517" MinWidth="939">
+  <Grid>
+    <blazorwpf:BlazorWebView x:Name="MyBlazorWebView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+  </Grid>
+</Window>

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\vloge\Downloads\Rift-2.1.0.3 (1)\Rift.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DE8C553-85B6-412B-92B3-A2904BAAD362}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Rift</AssemblyName>
+    <ApplicationVersion>2.1.0.3</ApplicationVersion>
+    <RootNamespace>Rift.Frontend</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DiscordRPC">
+      <HintPath>lib\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="INIFileParser">
+      <HintPath>lib\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Components">
+      <HintPath>lib\Microsoft.AspNetCore.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Components.Web">
+      <HintPath>lib\Microsoft.AspNetCore.Components.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>lib\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
+      <HintPath>lib\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JSInterop">
+      <HintPath>lib\Microsoft.JSInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MobileBlazorBindings.Hosting">
+      <HintPath>lib\Microsoft.MobileBlazorBindings.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MobileBlazorBindings.WPF">
+      <HintPath>lib\Microsoft.MobileBlazorBindings.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Toolkit.Uwp.Notifications">
+      <HintPath>lib\Microsoft.Toolkit.Uwp.Notifications.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core">
+      <HintPath>lib\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf">
+      <HintPath>lib\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives" />
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Shard">
+      <HintPath>lib\Shard.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.Primitives" />
+    <Reference Include="System.ComponentModel.TypeConverter" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Process" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Drawing.Common" />
+    <Reference Include="System.IO.FileSystem" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Net.Requests" />
+    <Reference Include="System.Net.WebClient" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Runtime.InteropServices" />
+    <Reference Include="System.Security.Principal.Windows" />
+    <Reference Include="System.Text.Json" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="MainPage.cs" />
+    <Compile Include="_Imports.cs" />
+    <Compile Include="Utilities\ConsoleCommands.cs" />
+    <Compile Include="Utilities\Constants.cs" />
+    <Compile Include="Utilities\EmergencyNotice.cs" />
+    <Compile Include="Utilities\Strings.cs" />
+    <Compile Include="Utilities\Links.cs" />
+    <Compile Include="Utilities\Hammer.cs" />
+    <Compile Include="Utilities\ImageUtils.cs" />
+    <Compile Include="Utilities\Logger.cs" />
+    <Compile Include="Utilities\StringUtilities.cs" />
+    <Compile Include="Utilities\WindowsUtilities.cs" />
+    <Compile Include="Services\ConfigService.cs" />
+    <Compile Include="Services\LauncherService.cs" />
+    <Compile Include="Services\RichPresenceService.cs" />
+    <Compile Include="Services\UpdateService.cs" />
+    <Compile Include="Pages\Static\Scripts.cs" />
+    <Compile Include="Pages\Static\Stylesheets.cs" />
+    <Compile Include="Pages\Static\Watermark.cs" />
+    <Compile Include="Pages\LauncherPage\ChangelogModal.cs" />
+    <Compile Include="Pages\LauncherPage\LauncherPage.cs" />
+    <Compile Include="Pages\LauncherPage\Sidebar.cs" />
+    <Compile Include="Pages\LauncherPage\UpdateModal.cs" />
+    <Compile Include="Pages\LauncherPage\WarningModal.cs" />
+    <Compile Include="Pages\LauncherPage\Tabs\PlayTab.cs" />
+    <Compile Include="Pages\LauncherPage\Tabs\InfoTab.cs" />
+    <Compile Include="Pages\LauncherPage\Tabs\SettingsTab.cs" />
+    <Compile Include="Pages\LauncherPage\Tabs\ModsTab\ModsTab.cs" />
+    <Compile Include="Pages\FirstTimeSetup\FtsBuild.cs" />
+    <Compile Include="Pages\FirstTimeSetup\FtsName.cs" />
+    <Compile Include="Pages\FirstTimeSetup\FtsPage.cs" />
+    <Compile Include="Pages\FirstTimeSetup\FtsWelcome.cs" />
+    <Compile Include="Models\Changelog.cs" />
+    <Compile Include="Models\ChangelogSection.cs" />
+    <Compile Include="Models\ChangelogChange.cs" />
+    <Compile Include="Models\Mod.cs" />
+    <Compile Include="Models\Nitestats.cs" />
+    <Compile Include="Models\QueuedLog.cs" />
+    <Compile Include="Models\Config\Configuration.cs" />
+    <Compile Include="Models\Config\Installation.cs" />
+    <Compile Include="Exceptions\RuntimeException.cs" />
+    <Compile Include="Enums\LogCategory.cs" />
+    <Compile Include="Enums\LogType.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>mainwindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="rift.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FortniteClient-Win64-Shipping_BE.exe" />
+    <EmbeddedResource Include="Resources\FortniteLauncher.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="mainwindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
