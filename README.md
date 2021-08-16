@@ -2,4 +2,4 @@
 
 i like rift
 <br>
-https://discord.gg/7DzKEqHekW join or gay
+https://discord.gg/7DzKEqHekW<br> join or gay
