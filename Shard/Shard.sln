@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shard", "Shard.csproj", "{C154FB3A-61FC-4193-9D31-E2F09FF2B666}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shard", "Shard.csproj", "{80736114-CB3D-406B-AACB-DAA3EF74223A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C154FB3A-61FC-4193-9D31-E2F09FF2B666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C154FB3A-61FC-4193-9D31-E2F09FF2B666}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C154FB3A-61FC-4193-9D31-E2F09FF2B666}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C154FB3A-61FC-4193-9D31-E2F09FF2B666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80736114-CB3D-406B-AACB-DAA3EF74223A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80736114-CB3D-406B-AACB-DAA3EF74223A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80736114-CB3D-406B-AACB-DAA3EF74223A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80736114-CB3D-406B-AACB-DAA3EF74223A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

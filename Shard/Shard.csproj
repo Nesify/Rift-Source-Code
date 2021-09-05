@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <!--Project was exported from assembly: C:\Users\vloge\Downloads\Rift-2.1.0.3 (1)\Shard.dll-->
+  <!--Project was exported from assembly: C:\Users\vloge\Downloads\RiftMultiplayerLauncher\Shard.dll-->
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C154FB3A-61FC-4193-9D31-E2F09FF2B666}</ProjectGuid>
+    <ProjectGuid>{80736114-CB3D-406B-AACB-DAA3EF74223A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Shard</AssemblyName>
     <ApplicationVersion>1.0.0.0</ApplicationVersion>
@@ -45,24 +45,12 @@
       <HintPath>lib\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNetCore.Routing" />
-    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
-      <HintPath>lib\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
-      <HintPath>lib\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Hosting">
-      <HintPath>lib\Microsoft.Extensions.Hosting.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
-      <HintPath>lib\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Logging">
-      <HintPath>lib\Microsoft.Extensions.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Primitives">
-      <HintPath>lib\Microsoft.Extensions.Primitives.dll</HintPath>
-    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <Reference Include="Microsoft.Extensions.Hosting" />
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions" />
+    <Reference Include="Microsoft.Extensions.Logging" />
+    <Reference Include="Microsoft.Extensions.Primitives" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -82,7 +70,6 @@
   <ItemGroup>
     <Compile Include="_003CModule_003E.cs" />
     <Compile Include="Shard_ProcessedByFody.cs" />
-    <Compile Include="Costura\AssemblyLoader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Tools.cs" />
@@ -168,6 +155,7 @@
     <Compile Include="Controllers\McpController.cs" />
     <Compile Include="Controllers\StorefrontController.cs" />
     <Compile Include="Controllers\WaitingRoomController.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
