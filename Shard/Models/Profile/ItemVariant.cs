@@ -1,8 +1,8 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Rift.Backend.Models.Profile.ItemVariant
 // Assembly: Shard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: D6B48981-D8C7-4092-89E2-EB158745CDB1
-// Assembly location: C:\Users\vloge\Downloads\Rift-2.1.0.3 (1)\Shard.dll
+// MVID: 6F3E0BBF-2B21-48FA-A25C-D99F6888BB4F
+// Assembly location: C:\Users\vloge\Downloads\RiftMultiplayerLauncher\Shard.dll
 
 using Newtonsoft.Json;
 using System.Collections.Generic;
