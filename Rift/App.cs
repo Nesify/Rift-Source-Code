@@ -1,8 +1,8 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Rift.Frontend.App
-// Assembly: Rift, Version=2.1.0.3, Culture=neutral, PublicKeyToken=null
-// MVID: AAC5CA4C-9311-43E3-8158-D708D13A5729
-// Assembly location: C:\Users\vloge\Downloads\Rift-2.1.0.3 (1)\Rift.dll
+// Assembly: Rift, Version=2.1.0.4, Culture=neutral, PublicKeyToken=null
+// MVID: 0ACAFB20-2A21-412B-9705-20731E51C852
+// Assembly location: C:\Users\vloge\Downloads\RiftMultiplayerLauncher\Rift.dll
 
 using Microsoft.Extensions.Hosting;
 using Rift.Backend;
@@ -37,12 +37,12 @@ namespace Rift.Frontend
     }
 
     [DebuggerNonUserCode]
-    [GeneratedCode("PresentationBuildTasks", "5.0.6.0")]
+    [GeneratedCode("PresentationBuildTasks", "5.0.9.0")]
     public void InitializeComponent() => this.Startup += new StartupEventHandler(this.App_OnStartup);
 
     [STAThread]
     [DebuggerNonUserCode]
-    [GeneratedCode("PresentationBuildTasks", "5.0.6.0")]
+    [GeneratedCode("PresentationBuildTasks", "5.0.9.0")]
     public static void Main()
     {
       App app = new App();

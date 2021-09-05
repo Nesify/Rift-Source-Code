@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <!--Project was exported from assembly: C:\Users\vloge\Downloads\Rift-2.1.0.3 (1)\Rift.dll-->
+  <!--Project was exported from assembly: C:\Users\vloge\Downloads\RiftMultiplayerLauncher\Rift.dll-->
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8DE8C553-85B6-412B-92B3-A2904BAAD362}</ProjectGuid>
+    <ProjectGuid>{08B8458D-190C-4F27-9316-B6DAC011C2E0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Rift</AssemblyName>
-    <ApplicationVersion>2.1.0.3</ApplicationVersion>
+    <ApplicationVersion>2.1.0.4</ApplicationVersion>
     <RootNamespace>Rift.Frontend</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -36,21 +36,11 @@
     <Reference Include="INIFileParser">
       <HintPath>lib\INIFileParser.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNetCore.Components">
-      <HintPath>lib\Microsoft.AspNetCore.Components.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNetCore.Components.Web">
-      <HintPath>lib\Microsoft.AspNetCore.Components.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
-      <HintPath>lib\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
-      <HintPath>lib\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.JSInterop">
-      <HintPath>lib\Microsoft.JSInterop.dll</HintPath>
-    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Components" />
+    <Reference Include="Microsoft.AspNetCore.Components.Web" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions" />
+    <Reference Include="Microsoft.JSInterop" />
     <Reference Include="Microsoft.MobileBlazorBindings.Hosting">
       <HintPath>lib\Microsoft.MobileBlazorBindings.Hosting.dll</HintPath>
     </Reference>
@@ -75,9 +65,7 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="Shard">
-      <HintPath>lib\Shard.dll</HintPath>
-    </Reference>
+    <Reference Include="Shard" />
     <Reference Include="System.Collections" />
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.ComponentModel.Primitives" />

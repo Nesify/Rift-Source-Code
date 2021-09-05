@@ -1,8 +1,8 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Rift.Frontend.MainPage
-// Assembly: Rift, Version=2.1.0.3, Culture=neutral, PublicKeyToken=null
-// MVID: AAC5CA4C-9311-43E3-8158-D708D13A5729
-// Assembly location: C:\Users\vloge\Downloads\Rift-2.1.0.3 (1)\Rift.dll
+// Assembly: Rift, Version=2.1.0.4, Culture=neutral, PublicKeyToken=null
+// MVID: 0ACAFB20-2A21-412B-9705-20731E51C852
+// Assembly location: C:\Users\vloge\Downloads\RiftMultiplayerLauncher\Rift.dll
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
@@ -45,32 +45,32 @@ namespace Rift.Frontend
     {
       __builder.OpenComponent<Stylesheets>(0);
       __builder.CloseComponent();
-      __builder.AddMarkupContent(1, "\r\n");
+      __builder.AddMarkupContent(1, "\n");
       __builder.OpenComponent<Scripts>(2);
       __builder.CloseComponent();
-      __builder.AddMarkupContent(3, "\r\n");
+      __builder.AddMarkupContent(3, "\n");
       __builder.OpenElement(4, "Console");
       __builder.CloseElement();
-      __builder.AddMarkupContent(5, "\r\n\r\n");
+      __builder.AddMarkupContent(5, "\n\n");
       __builder.OpenElement(6, "div");
       __builder.AddAttribute(7, "class", "app");
-      __builder.AddMarkupContent(8, "\r\n    ");
+      __builder.AddMarkupContent(8, "\n    ");
       __builder.OpenComponent<Watermark>(9);
       __builder.CloseComponent();
-      __builder.AddMarkupContent(10, "\r\n");
+      __builder.AddMarkupContent(10, "\n");
       if (this._configService.RequireFirstTimeSetup)
       {
         __builder.AddContent(11, "        ");
         __builder.OpenComponent<FtsPage>(12);
         __builder.CloseComponent();
-        __builder.AddMarkupContent(13, "\r\n");
+        __builder.AddMarkupContent(13, "\n");
       }
       else
       {
         __builder.AddContent(14, "        ");
         __builder.OpenComponent<Rift.Frontend.Pages.LauncherPage.LauncherPage>(15);
         __builder.CloseComponent();
-        __builder.AddMarkupContent(16, "\r\n");
+        __builder.AddMarkupContent(16, "\n");
       }
       __builder.CloseElement();
     }

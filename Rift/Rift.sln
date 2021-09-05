@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rift", "Rift.csproj", "{8DE8C553-85B6-412B-92B3-A2904BAAD362}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rift", "Rift.csproj", "{08B8458D-190C-4F27-9316-B6DAC011C2E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8DE8C553-85B6-412B-92B3-A2904BAAD362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DE8C553-85B6-412B-92B3-A2904BAAD362}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DE8C553-85B6-412B-92B3-A2904BAAD362}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DE8C553-85B6-412B-92B3-A2904BAAD362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08B8458D-190C-4F27-9316-B6DAC011C2E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B8458D-190C-4F27-9316-B6DAC011C2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B8458D-190C-4F27-9316-B6DAC011C2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B8458D-190C-4F27-9316-B6DAC011C2E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
