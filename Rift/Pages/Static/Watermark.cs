@@ -1,8 +1,8 @@
 ﻿// Decompiled with JetBrains decompiler
 // Type: Rift.Frontend.Pages.Static.Watermark
-// Assembly: Rift, Version=2.1.0.3, Culture=neutral, PublicKeyToken=null
-// MVID: AAC5CA4C-9311-43E3-8158-D708D13A5729
-// Assembly location: C:\Users\vloge\Downloads\Rift-2.1.0.3 (1)\Rift.dll
+// Assembly: Rift, Version=2.1.0.4, Culture=neutral, PublicKeyToken=null
+// MVID: 0ACAFB20-2A21-412B-9705-20731E51C852
+// Assembly location: C:\Users\vloge\Downloads\RiftMultiplayerLauncher\Rift.dll
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
@@ -17,9 +17,9 @@ namespace Rift.Frontend.Pages.Static
       __builder.OpenElement(0, "div");
       __builder.AddAttribute(1, "class", "watermark");
       __builder.AddAttribute(2, "onclick", "rift.tabManager.setTab('info')");
-      __builder.AddMarkupContent(3, "\r\n    ");
+      __builder.AddMarkupContent(3, "\n    ");
       __builder.AddContent(4, Strings.VERSION_STRING);
-      __builder.AddMarkupContent(5, "\r\n");
+      __builder.AddMarkupContent(5, "\n");
       __builder.CloseElement();
     }
   }
